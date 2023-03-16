@@ -26,7 +26,7 @@ const LeagueContainer = () => {
             lg={3}
             style={{ gridRowColumns: '1fr' }}
           >
-            <Link to={`league/${item.id}`} style={{ textDecoration: 'none' }}>
+            <Link to={`${item.id}`} style={{ textDecoration: 'none' }}>
               <Card
                 elevation={24}
                 sx={{ margin: '1rem', background: '#fff', padding: '10% 0' }}
