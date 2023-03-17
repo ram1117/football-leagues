@@ -90,9 +90,9 @@ const DetailPage = () => {
                 <TableCell>
                   <img
                     src={
-                      team.team.logos === 'undefined'
-                        ? team.team.logos[0].href
-                        : ''
+                      team.team.logos === undefined
+                        ? ''
+                        : team.team.logos[0].href
                     }
                     alt="team logo"
                     style={{ height: '30px' }}
