@@ -19,7 +19,15 @@ export const fetchDetail = createAsyncThunk(
 const detailSlice = createSlice({
   name: 'details',
   initialState,
-  reducers: {},
+  reducers: {
+    resetState: (state) => ({
+      ...state,
+      name: '',
+      standings: [],
+      season: '',
+      status: 'idle',
+    }),
+  },
   extraReducers(builder) {
     builder
       .addCase(fetchDetail.pending, (state) => ({
@@ -38,4 +46,6 @@ const detailSlice = createSlice({
       });
   },
 });
+
+export const { resetState } = detailSlice.actions;
 export default detailSlice.reducer;

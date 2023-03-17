@@ -14,7 +14,7 @@ const LeagueContainer = () => {
     return <h5>Loading....</h5>;
   }
   return (
-    <Box>
+    <Box sx={{ width: '80%', margin: '5% auto' }}>
       <Grid container spacing={1}>
         {list.map((item) => (
           <Grid
