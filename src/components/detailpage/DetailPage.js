@@ -89,7 +89,11 @@ const DetailPage = () => {
               <TableRow key={team.team.id}>
                 <TableCell>
                   <img
-                    src={team.team.logos[0].href}
+                    src={
+                      team.team.logos === 'undefined'
+                        ? team.team.logos[0].href
+                        : ''
+                    }
                     alt="team logo"
                     style={{ height: '30px' }}
                   />
