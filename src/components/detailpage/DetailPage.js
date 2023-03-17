@@ -69,19 +69,19 @@ const DetailPage = () => {
           boxShadow: '10',
         }}
       >
-        <Table size="small" aria-label="a dense table">
+        <Table size="small" aria-label="a dense table" color="primary.main">
           <TableHead>
             <TableRow>
               <TableCell> </TableCell>
               <TableCell>Team</TableCell>
-              <TableCell>Played</TableCell>
-              <TableCell>Wins</TableCell>
-              <TableCell>Draws</TableCell>
-              <TableCell>Losses</TableCell>
-              <TableCell>Points</TableCell>
-              <TableCell>Goals Fr.</TableCell>
-              <TableCell>Goals Ag.</TableCell>
-              <TableCell>Record</TableCell>
+              <TableCell align="center">Played</TableCell>
+              <TableCell align="center">Wins</TableCell>
+              <TableCell align="center">Draws</TableCell>
+              <TableCell align="center">Losses</TableCell>
+              <TableCell align="center">Points</TableCell>
+              <TableCell align="center">Goals Fr.</TableCell>
+              <TableCell align="center">Goals Ag.</TableCell>
+              <TableCell align="center">Record</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
